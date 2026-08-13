@@ -1463,3 +1463,300 @@ button, input, textarea { font: inherit; }
     color: #006b7a !important;
   }
 }
+
+
+/* =========================================================
+   HOME PAGE V1.2 — simplified density + smaller typography
+   Scoped to .home-page so project case studies and CV retain
+   their detailed layouts.
+   ========================================================= */
+
+.home-page .section {
+  padding: 68px 0;
+}
+
+.home-page .hero {
+  min-height: 88vh;
+  padding: 112px 0 56px;
+}
+
+.home-page .hero-grid {
+  grid-template-columns: 1.08fr .92fr;
+  gap: 42px;
+}
+
+.home-page .hero-kicker {
+  margin-bottom: 14px;
+  font-size: .80rem;
+}
+
+.home-page .hero-title {
+  max-width: 720px;
+  font-size: clamp(2.65rem, 5.1vw, 4.75rem);
+  line-height: .97;
+  letter-spacing: -.064em;
+}
+
+.home-page .hero-desc {
+  max-width: 570px;
+  margin-top: 20px;
+  font-size: clamp(.94rem, 1.15vw, 1.04rem);
+  line-height: 1.65;
+}
+
+.home-page .hero-actions {
+  margin-top: 26px;
+}
+
+.home-page .hero-visual {
+  min-height: 430px;
+}
+
+.home-page .network-stage {
+  inset: 12px 0 0;
+  border-radius: 28px;
+}
+
+.home-page .radar {
+  width: 250px;
+}
+
+.home-page .metric-card {
+  min-width: 132px;
+  padding: 11px 12px;
+}
+
+.home-page .metric-card strong {
+  font-size: 1.08rem;
+}
+
+.home-page .metric-a { left: 18px; top: 20px; }
+.home-page .metric-b { right: 18px; top: 70px; }
+.home-page .metric-c { left: 20px; bottom: 26px; }
+
+.home-page .section-title {
+  max-width: 700px;
+  font-size: clamp(1.85rem, 3.35vw, 2.95rem);
+  line-height: 1.06;
+  letter-spacing: -.047em;
+}
+
+.home-page .section-copy {
+  max-width: 650px;
+  margin-top: 18px;
+  font-size: .96rem;
+  line-height: 1.72;
+}
+
+.home-page .compact-copy {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-page .home-skill-tags {
+  margin-top: 24px;
+}
+
+.home-page .home-expertise-grid {
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  margin-top: 34px;
+}
+
+.home-page .expertise-card {
+  min-height: 205px;
+  padding: 22px;
+}
+
+.home-page .expertise-card h3 {
+  margin-top: 34px;
+  font-size: 1.18rem;
+}
+
+.home-page .expertise-card p {
+  font-size: .87rem;
+  line-height: 1.62;
+}
+
+.home-page .project-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 28px;
+}
+
+.home-page .text-link {
+  flex: 0 0 auto;
+  padding-bottom: 8px;
+  color: #9caabd;
+  font-size: .86rem;
+  font-weight: 750;
+}
+
+.home-page .text-link span {
+  color: var(--brand);
+  margin-left: 5px;
+}
+
+.home-page .text-link:hover {
+  color: white;
+}
+
+.home-page .project-grid {
+  margin-top: 34px;
+}
+
+.home-page .project-card {
+  min-height: 360px;
+}
+
+.home-page .project-art {
+  height: 190px;
+}
+
+.home-page .project-art .symbol {
+  font-size: 3.55rem;
+}
+
+.home-page .project-body {
+  padding: 21px;
+}
+
+.home-page .project-card h3 {
+  font-size: 1.22rem;
+}
+
+.home-page .project-card p {
+  margin-top: 10px;
+  font-size: .86rem;
+  line-height: 1.6;
+}
+
+.home-page .project-tags {
+  margin-top: 15px;
+}
+
+.home-page .project-link {
+  margin-top: 17px;
+  font-size: .85rem;
+}
+
+.home-page .home-contact-section {
+  padding-top: 54px;
+}
+
+.home-page .contact-card {
+  padding: clamp(28px, 4vw, 46px);
+  border-radius: 28px;
+}
+
+.home-page .contact-card h2 {
+  max-width: 620px;
+  font-size: clamp(2rem, 3.6vw, 3.25rem);
+}
+
+.home-page .contact-card p {
+  margin-top: 14px;
+  font-size: .94rem;
+}
+
+.home-page .contact-actions {
+  margin-top: 24px;
+}
+
+.home-page .contact-eyebrow {
+  justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .home-page .hero {
+    min-height: auto;
+    padding-top: 110px;
+  }
+
+  .home-page .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .home-page .hero-visual {
+    min-height: 390px;
+    max-width: 590px;
+  }
+
+  .home-page .home-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .expertise-card {
+    min-height: 170px;
+  }
+
+  .home-page .expertise-card h3 {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-page .section {
+    padding: 56px 0;
+  }
+
+  .home-page .hero {
+    padding: 104px 0 52px;
+  }
+
+  .home-page .hero-title {
+    font-size: clamp(2.45rem, 11.5vw, 3.9rem);
+    line-height: .98;
+  }
+
+  .home-page .section-title {
+    font-size: clamp(1.75rem, 8.4vw, 2.55rem);
+  }
+
+  .home-page .hero-visual {
+    min-height: 350px;
+  }
+
+  .home-page .radar {
+    width: 205px;
+  }
+
+  .home-page .project-section-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-page .text-link {
+    padding-bottom: 0;
+  }
+
+  .home-page .project-art {
+    height: 175px;
+  }
+}
+
+@media (max-width: 460px) {
+  .home-page .hero-title {
+    font-size: clamp(2.28rem, 11vw, 3.25rem);
+  }
+
+  .home-page .hero-visual {
+    min-height: 320px;
+  }
+
+  .home-page .metric-card {
+    min-width: 112px;
+  }
+
+  .home-page .metric-card small {
+    display: none;
+  }
+
+  .home-page .metric-c {
+    left: 14px;
+    bottom: 16px;
+  }
+}

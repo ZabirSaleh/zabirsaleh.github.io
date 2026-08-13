@@ -1,8 +1,8 @@
 (() => {
   const CONFIG = {
-    email: "z4abir@gmail.com",
+    email: "YOUR_EMAIL@example.com",
     github: "https://github.com/ZabirSaleh",
-    linkedin: "https://www.linkedin.com/in/zabir-saleh/"
+    linkedin: "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/"
   };
 
   document.querySelectorAll("[data-email]").forEach((el) => {

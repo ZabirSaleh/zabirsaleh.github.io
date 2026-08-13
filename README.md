@@ -71,13 +71,13 @@ For the most accurate local test, use VS Code **Live Server**:
 
 Create a repository exactly named:
 
-`YOUR_GITHUB_USERNAME.github.io`
+`ZabirSaleh.github.io`
 
 Then upload the **contents** of this folder to the repository root.
 
 Your URL becomes:
 
-`https://YOUR_GITHUB_USERNAME.github.io/`
+`https://ZabirSaleh.github.io/`
 
 No build command is required.
 
@@ -88,7 +88,7 @@ git init
 git add .
 git commit -m "Create personal portfolio"
 git branch -M main
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME.github.io.git
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/ZabirSaleh.github.io.git
 git push -u origin main
 ```
 
@@ -129,3 +129,8 @@ This lets you create a PDF CV from the web version without maintaining a separat
 The numerical RF metrics displayed in the hero are illustrative interface values, not claims about a specific live network.
 
 Before publishing, review all career/project descriptions and replace the placeholder email and LinkedIn URL.
+
+
+## Version 1.2 homepage
+
+The homepage was simplified to Hero → About → 3 Expertise areas → 4 Featured Projects → Contact. Full experience remains in `cv.html`, and all six projects are available from `projects/index.html`.
