@@ -1,7 +1,7 @@
 (() => {
   const CONFIG = {
     email: "z4abir@gmail.com",
-    github: "https://github.com/ZbrSaadat",
+    github: "https://github.com/ZabirSaleh",
     linkedin: "https://www.linkedin.com/in/zabir-saleh/"
   };
 
