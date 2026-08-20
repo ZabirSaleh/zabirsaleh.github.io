@@ -1090,6 +1090,18 @@
   background-size: 36px 36px, 36px 36px, auto;
 }
 
+.tech-subpage .project-showcase-image {
+  min-height: 0;
+  padding: 0;
+  background: #cfe9f6;
+}
+
+.tech-subpage .project-showcase-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .tech-subpage .showcase-core {
   border-color: var(--deck-blue);
   border-radius: 0;
