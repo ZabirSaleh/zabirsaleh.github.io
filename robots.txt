@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zabirsaleh.github.io/sitemap.xml
