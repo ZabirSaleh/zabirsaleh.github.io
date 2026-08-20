@@ -1102,6 +1102,12 @@
   height: auto;
 }
 
+.tech-subpage .project-showcase-image-square img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
 .tech-subpage .showcase-core {
   border-color: var(--deck-blue);
   border-radius: 0;
