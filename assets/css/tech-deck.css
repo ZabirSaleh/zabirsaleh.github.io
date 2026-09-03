@@ -581,6 +581,209 @@
 
 .deck-bullets li::marker { color: white; }
 
+.deck-vision-goals .deck-copy { max-width: 840px; }
+
+.deck-direction-list {
+  display: grid;
+  gap: 24px;
+}
+
+.deck-direction-list article {
+  position: relative;
+  padding: 27px 30px 29px 34px;
+  border: 1px solid rgba(132, 174, 235, .24);
+  border-left: 4px solid var(--deck-blue);
+  background:
+    linear-gradient(120deg, rgba(52, 139, 255, .13), rgba(2, 10, 25, .76) 58%),
+    rgba(0, 7, 18, .72);
+}
+
+.deck-direction-list article:nth-child(2) { border-left-color: var(--deck-blue-soft); }
+
+.deck-direction-list article > span,
+.deck-section-kicker {
+  display: block;
+  color: var(--deck-blue-soft);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.deck-direction-list h3 {
+  margin: 12px 0 18px;
+  color: white;
+  font-size: clamp(1.08rem, 1.55vw, 1.42rem);
+  line-height: 1.35;
+}
+
+.deck-direction-list ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.deck-direction-list li {
+  padding-left: 4px;
+  color: #dce7f4;
+  font-size: clamp(.92rem, 1.05vw, 1.05rem);
+  line-height: 1.5;
+}
+
+.deck-direction-list li::marker { color: var(--deck-blue); }
+
+.deck-certifications { align-items: flex-start; }
+.deck-certifications h2 { font-size: clamp(3.2rem, 5.8vw, 5.2rem); }
+
+.deck-certification-intro {
+  display: grid;
+  grid-template-columns: minmax(220px, .45fr) minmax(0, 1.55fr);
+  align-items: end;
+  gap: 60px;
+  margin-bottom: 62px;
+}
+
+.deck-certification-intro .deck-brand-mini { margin: 0 0 11px; }
+.deck-certification-intro h2 { margin-top: 12px; }
+
+.deck-certification-intro p {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: #d9e5f3;
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.credential-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.credential-card {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 25px 30px;
+  overflow: hidden;
+  border: 1px solid rgba(132, 174, 235, .3);
+  background:
+    linear-gradient(145deg, rgba(52, 139, 255, .12), transparent 40%),
+    rgba(0, 7, 18, .88);
+  box-shadow: 0 24px 58px rgba(0, 0, 0, .27);
+  text-align: center;
+  transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+
+.credential-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--deck-blue), transparent);
+}
+
+.credential-card::after {
+  content: "";
+  position: absolute;
+  right: -36px;
+  bottom: -38px;
+  width: 115px;
+  height: 115px;
+  border: 1px solid rgba(52, 139, 255, .18);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.credential-card:hover {
+  border-color: rgba(52, 139, 255, .78);
+  box-shadow: 0 28px 68px rgba(0, 0, 0, .34), 0 0 34px rgba(52, 139, 255, .08);
+  transform: translateY(-5px);
+}
+
+.credential-card-new { border-color: rgba(52, 139, 255, .64); }
+
+.credential-card-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(132, 174, 235, .2);
+  color: var(--deck-blue-soft);
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+}
+
+.credential-card-top strong {
+  color: white;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.credential-card > img {
+  width: 174px;
+  height: 174px;
+  margin: 30px auto 23px;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, .28));
+}
+
+.credential-card-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.credential-card h3 {
+  margin: 0;
+  color: white;
+  font-size: clamp(1.06rem, 1.3vw, 1.3rem);
+  line-height: 1.35;
+}
+
+.credential-card p {
+  margin: 13px 0 22px;
+  color: #9fb1c8;
+  font-size: .72rem;
+  line-height: 1.5;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.credential-card > a {
+  position: relative;
+  z-index: 2;
+  padding: 12px 5px 4px;
+  color: var(--deck-blue-soft);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.credential-card > a:hover,
+.credential-card > a:focus-visible { color: white; }
+
+.credential-wallet-link {
+  width: fit-content;
+  display: block;
+  margin: 46px 0 0 auto;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--deck-blue);
+  color: white;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
 .deck-projects { align-items: flex-start; }
 
 .deck-project-intro {
@@ -804,6 +1007,7 @@
   .deck-service-grid article { grid-template-columns: 120px 1fr; gap: 28px; }
   .deck-service-grid img { width: 112px; height: 112px; }
   .deck-timeline article { padding-inline: 10px; }
+  .credential-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .deck-project > div { padding: 45px; }
 }
 
@@ -813,6 +1017,8 @@
   .deck-contact-grid { grid-template-columns: 1fr; }
   .deck-diagonal-stack { min-height: 620px; }
   .deck-split-image-first .deck-diagonal-stack { order: 0; }
+  .deck-certification-intro { grid-template-columns: 1fr; gap: 28px; }
+  .deck-certification-intro .deck-brand-mini { margin-bottom: 16px; }
   .deck-service-grid { grid-template-columns: 1fr; }
   .deck-timeline { grid-template-columns: 1fr; gap: 0; margin-top: 45px; }
   .deck-timeline::before {
@@ -867,6 +1073,12 @@
   .deck-timeline p { font-size: .92rem; }
   .deck-bullets { gap: 25px; padding-left: 25px; }
   .deck-bullets li { font-size: 1rem; }
+  .deck-direction-list article { padding: 23px 22px 25px 25px; }
+  .deck-certifications h2 { font-size: clamp(2.05rem, 10.8vw, 3.4rem); }
+  .credential-grid { grid-template-columns: 1fr; gap: 18px; }
+  .credential-card { min-height: 490px; padding-inline: 22px; }
+  .credential-card > img { width: 168px; height: 168px; }
+  .credential-wallet-link { margin-top: 34px; }
   .deck-project-intro { min-height: 520px; padding: 50px 12px 50px 0; border-width: 7px; background-size: cover; }
   .deck-project-intro::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(0, 8, 22, .55); }
   .deck-project-intro h2 { font-size: clamp(5rem, 24vw, 7.5rem); }
