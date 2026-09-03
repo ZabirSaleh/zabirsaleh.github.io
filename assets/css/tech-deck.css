@@ -194,6 +194,8 @@
 
 .tech-hero-frame {
   width: min(1680px, 100%);
+  max-width: 100%;
+  min-width: 0;
   min-height: min(79vh, 860px);
   display: grid;
   place-items: center;
@@ -205,7 +207,7 @@
   text-align: center;
 }
 
-.tech-hero-content { max-width: 1400px; }
+.tech-hero-content { width: 100%; max-width: 1400px; min-width: 0; }
 
 .tech-hero-brand {
   display: inline-flex;
@@ -294,7 +296,7 @@
   .tech-hero-brand { margin-bottom: 38px; }
   .tech-hero-brand .tech-brand-mark { width: 40px; height: 46px; }
   .tech-hero-brand strong { max-width: 210px; font-size: .95rem; }
-  .tech-hero h1 { font-size: clamp(3.5rem, 18vw, 5.5rem); }
+  .tech-hero h1 { max-width: 100%; font-size: clamp(1.55rem, 7.8vw, 3rem); }
   .tech-hero h1 small { margin-top: 22px; font-size: .31em; line-height: 1.2; }
   .tech-hero p { font-size: .92rem; }
 }
@@ -1016,8 +1018,9 @@
   .deck-split,
   .deck-contact-grid { grid-template-columns: 1fr; }
   .deck-diagonal-stack { min-height: 620px; }
-  .deck-split-image-first .deck-diagonal-stack { order: 0; }
+  .deck-split-image-first .deck-diagonal-stack { order: 2; }
   .deck-certification-intro { grid-template-columns: 1fr; gap: 28px; }
+  .deck-certification-intro > * { min-width: 0; }
   .deck-certification-intro .deck-brand-mini { margin-bottom: 16px; }
   .deck-service-grid { grid-template-columns: 1fr; }
   .deck-timeline { grid-template-columns: 1fr; gap: 0; margin-top: 45px; }
@@ -1055,7 +1058,7 @@
 @media (max-width: 600px) {
   .tech-portfolio .container { width: calc(100% - 32px); }
   .deck-section { padding: 82px 0 68px; scroll-margin-top: 78px; border-width: 6px; }
-  .deck-section h2 { font-size: clamp(3.2rem, 16vw, 4.7rem); }
+  .deck-section h2 { max-width: 100%; font-size: clamp(2.15rem, 10vw, 3.9rem); }
   .deck-brand-mini { margin-bottom: 48px; }
   .deck-title-rule { margin: 25px 0 34px; }
   .deck-copy > p { font-size: 1rem; }
@@ -1074,14 +1077,14 @@
   .deck-bullets { gap: 25px; padding-left: 25px; }
   .deck-bullets li { font-size: 1rem; }
   .deck-direction-list article { padding: 23px 22px 25px 25px; }
-  .deck-certifications h2 { font-size: clamp(2.05rem, 10.8vw, 3.4rem); }
+  .deck-certifications h2 { font-size: clamp(1.55rem, 7.4vw, 3.2rem); }
   .credential-grid { grid-template-columns: 1fr; gap: 18px; }
   .credential-card { min-height: 490px; padding-inline: 22px; }
   .credential-card > img { width: 168px; height: 168px; }
   .credential-wallet-link { margin-top: 34px; }
   .deck-project-intro { min-height: 520px; padding: 50px 12px 50px 0; border-width: 7px; background-size: cover; }
   .deck-project-intro::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(0, 8, 22, .55); }
-  .deck-project-intro h2 { font-size: clamp(5rem, 24vw, 7.5rem); }
+  .deck-project-intro h2 { font-size: clamp(3rem, 14vw, 5.2rem); }
   .deck-project-intro p { font-size: 1.03rem; }
   .deck-project-list { gap: 35px; margin-top: 50px; }
   .deck-project-image,
@@ -1096,7 +1099,7 @@
   .deck-thanks { min-height: 100svh; padding: 60px 16px; }
   .deck-thanks-frame { min-height: calc(100svh - 120px); padding: 35px 18px; border-width: 4px; }
   .deck-thanks .deck-brand-mini { margin-bottom: 80px; }
-  .deck-thanks h2 { font-size: clamp(5rem, 26vw, 8rem); }
+  .deck-thanks h2 { font-size: clamp(3.2rem, 17vw, 6rem); }
   .deck-thanks a { margin-top: 90px; font-size: .96rem; }
   .tech-footer .footer-row { width: calc(100% - 32px); gap: 18px; }
 }
