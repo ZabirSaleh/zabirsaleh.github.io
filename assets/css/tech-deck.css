@@ -1104,6 +1104,127 @@
   .tech-footer .footer-row { width: calc(100% - 32px); gap: 18px; }
 }
 
+/* A more editorial desktop scale: preserve the deck language without making
+   each section feel like a full-screen presentation slide. */
+@media (min-width: 981px) {
+  .tech-portfolio { --deck-max: 1280px; }
+
+  .tech-header { height: 74px; }
+  .tech-header .nav-wrap { min-height: 74px; }
+  .tech-brand-mark { width: 34px; height: 39px; }
+  .tech-brand-copy strong { font-size: .9rem; }
+  .tech-header .desktop-nav a { padding: 8px 10px; font-size: .66rem; }
+  .tech-resume-link { min-height: 36px; padding-inline: 14px; }
+
+  .tech-hero {
+    min-height: 94svh;
+    padding: 98px 52px 38px;
+  }
+
+  .tech-hero-frame {
+    width: min(1380px, 100%);
+    min-height: min(70vh, 660px);
+    padding: 46px 58px;
+    border-width: 6px;
+  }
+
+  .tech-hero-content { max-width: 1120px; }
+  .tech-hero-brand { margin-bottom: 34px; }
+  .tech-hero-brand .tech-brand-mark { width: 46px; height: 53px; }
+  .tech-hero-brand strong { font-size: clamp(1rem, 1.3vw, 1.35rem); }
+  .tech-hero h1 { font-size: clamp(4rem, 6.7vw, 7rem); }
+  .tech-hero h1 small { margin-top: 20px; font-size: .31em; }
+  .tech-hero p {
+    max-width: 720px;
+    margin-top: 25px;
+    font-size: clamp(.96rem, 1.15vw, 1.1rem);
+    line-height: 1.55;
+  }
+  .tech-hero-actions { margin-top: 29px; }
+
+  .deck-section {
+    min-height: 0;
+    padding: 94px 0 82px;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    scroll-margin-top: 74px;
+  }
+
+  .deck-split { gap: clamp(48px, 5vw, 78px); }
+  .deck-copy { max-width: 650px; }
+  .deck-brand-mini { margin-bottom: 50px; }
+  .deck-section h2,
+  .deck-thanks h2 { font-size: clamp(2.9rem, 4.4vw, 4.25rem); }
+  .deck-title-rule { margin: 26px 0 35px; }
+  .deck-copy > p { font-size: clamp(1rem, 1.15vw, 1.18rem); line-height: 1.58; }
+  .deck-copy > p + p { margin-top: 18px; }
+
+  .deck-diagonal-stack { min-height: 500px; }
+  .deck-diagonal-stack img,
+  .deck-image-layer { width: 76%; height: 76%; }
+
+  .deck-services .deck-brand-mini { margin-bottom: 46px; }
+  .deck-service-grid { gap: 44px 68px; margin-top: 42px; }
+  .deck-service-grid article { grid-template-columns: 112px 1fr; gap: 27px; }
+  .deck-service-grid img { width: 106px; height: 106px; }
+  .deck-service-grid h3 { margin-bottom: 9px; font-size: clamp(1.18rem, 1.35vw, 1.45rem); }
+  .deck-service-grid p { font-size: clamp(.96rem, 1vw, 1.06rem); line-height: 1.48; }
+
+  .deck-timeline { margin-top: 54px; }
+  .deck-timeline::before { top: 70px; }
+  .deck-timeline::after { top: 61px; }
+  .deck-timeline strong { font-size: clamp(1.6rem, 2.15vw, 2.15rem); }
+  .deck-timeline i { margin: 23px auto 18px; }
+  .deck-timeline p { font-size: clamp(.86rem, .9vw, .98rem); }
+  .deck-button { margin-top: 50px; }
+
+  .deck-bullets { gap: 25px; padding-left: 28px; }
+  .deck-bullets li { font-size: clamp(1rem, 1.1vw, 1.16rem); line-height: 1.52; }
+  .deck-direction-list { gap: 17px; }
+  .deck-direction-list article { padding: 21px 24px 22px 28px; }
+  .deck-direction-list h3 { margin: 10px 0 13px; font-size: clamp(1.02rem, 1.05vw, 1.16rem); }
+  .deck-direction-list li { font-size: clamp(.86rem, .9vw, .96rem); }
+
+  .deck-certifications h2 { font-size: clamp(2.8rem, 4vw, 3.85rem); }
+  .deck-certification-intro { gap: 42px; margin-bottom: 46px; }
+  .deck-certification-intro p { margin-top: 18px; font-size: clamp(.96rem, 1vw, 1.08rem); }
+  .credential-card { min-height: 440px; padding: 22px 20px 25px; }
+  .credential-card > img { width: 138px; height: 138px; margin: 23px auto 18px; }
+  .credential-card h3 { font-size: clamp(1rem, 1vw, 1.12rem); }
+  .credential-card p { margin: 10px 0 17px; }
+  .credential-wallet-link { margin-top: 34px; }
+
+  .deck-project-intro {
+    min-height: 470px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .deck-project-intro .deck-brand-mini { margin-bottom: 42px; }
+  .deck-project-intro h2 { font-size: clamp(3.7rem, 5.7vw, 5.5rem); }
+  .deck-project-intro p { margin-top: 28px; font-size: clamp(1.05rem, 1.3vw, 1.28rem); }
+  .deck-project-list { gap: 42px; margin-top: 60px; }
+  .deck-project,
+  .deck-project-image { min-height: 360px; }
+  .deck-project > div { padding: 38px 46px; }
+  .deck-project h3 { margin-top: 14px; font-size: clamp(1.75rem, 2.55vw, 2.45rem); }
+  .deck-project p { margin-top: 18px; font-size: clamp(.96rem, 1vw, 1.08rem); line-height: 1.55; }
+  .deck-text-link { margin-top: 22px; }
+
+  .deck-contact-grid { gap: 55px; }
+  .deck-contact .deck-brand-mini { margin-bottom: 50px; }
+  .deck-contact-links { margin-top: 37px; }
+  .deck-contact-links > a,
+  .deck-contact-links > div { grid-template-columns: 105px 1fr; min-height: 62px; }
+  .deck-contact-links strong { font-size: clamp(1rem, 1.05vw, 1.16rem); }
+  .deck-contact-image { min-height: 550px; }
+
+  .deck-thanks { min-height: 76svh; padding: 64px 5vw; }
+  .deck-thanks-frame { min-height: 56svh; padding: 46px; border-width: 6px; }
+  .deck-thanks .deck-brand-mini { margin-bottom: 68px; }
+  .deck-thanks h2 { font-size: clamp(5rem, 8vw, 8rem); }
+  .deck-thanks a { margin-top: 72px; font-size: clamp(.95rem, 1.25vw, 1.2rem); }
+}
+
 /* Shared PPT theme for résumé and project pages */
 .tech-subpage {
   margin: 0;
